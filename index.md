@@ -47,7 +47,6 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
 I achieved my first milestone by learning and understanding circuit fundamentals which is incorporated in my project as I learned how to connect the ultrasonic sensor into the breadboard which is a crucial part for my project. I also learned how to use example codes and how to effectively change them to fit into the circumstances of your project. 
 - An explanation about the different components of your project and how they will all integrate together
 - Technical progress you've made so far
@@ -91,6 +90,7 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
 }
+
 
 
 # Bill of Materials

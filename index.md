@@ -52,6 +52,8 @@ I achieved my first milestone by learning and understanding circuit fundamentals
 - Challenges with building the hardware since some of my nanos broke and having the code altered to respond to the hardware
 - Use ultrasonic sensor and buzzer to detect objects within a certain distance to notify user of obstacles in front
 
+![Headstone Image](logo.svg)
+
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 

@@ -50,14 +50,14 @@ For your second milestone, explain what you've worked on since your previous mil
 I achieved my first milestone by learning and understanding circuit fundamentals which is incorporated in my project as I learned how to connect the ultrasonic sensor into the breadboard which is a crucial part for my project. I also learned how to use example codes and how to effectively change them to fit into the circumstances of your project. 
 - An explanation about the different components of your project and how they will all integrate together
 - Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
+- Challenges with building the hardware 
 - Use ultrasonic sensor and buzzer to detect objects within a certain distance to notify user of obstacles in front
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+trigPin and eachPin are defined and start serial communication for the serial monitor and a long variable named duration to get the travel time from the sensor. In the loop, we first need to clear the trigPin by setting it to LOW for 2 microseconds. This ensures the sensor is ready. After that, we use the pulseIn() function to measure how long it takes for the sound to travel to the object and back. The time measured is stored in the variable duration, and it represents the round-trip time of the sound wave in microseconds.To calculate the distance, we multiply duration by 0.034 speed of sound in cm/µs and divide by 2 since the sound travels to the object and back.
 
 ```c++
 // defines pins numbers

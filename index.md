@@ -38,6 +38,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - I built the ultrasonic sensor and buzzer into the breadboard for the hardware and used jumper wires to plug them into the nano for a good connection and have the nano pluged into a power bank to make it more compact and accessable in more mobile use 
 - There were some difficulties with the hardware and debugging figuring out which physical component wasn't working since the ulrasonic senor wasn't detecting any distance for any objects in motion 
 - Some of the physical hardware components had stopped working or malfunctioned which caused some delay during the building process but we worked around it and figured out other solutions like using jumperwire and connecting it directly to the nano
+- Learned to incorporate codes for different physical hardware parts together like the buzzer and the ultrasonic sensor together
 - I still need to work on modifications and see if there are any components I can add to improve my projects for my final milestone
 
 # First Milestone

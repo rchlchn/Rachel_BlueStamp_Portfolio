@@ -59,7 +59,7 @@ hardware for the ultrasonic senor, a button, and a buzzer to track objects in mo
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
-trigPin and eachPin are defined and start serial communication for the serial monitor and a long variable named duration to get the travel time from the sensor. In the loop, we first need to clear the trigPin by setting it to LOW for 2 microseconds. This ensures the sensor is ready. After that, we use the pulseIn() function to measure how long it takes for the sound to travel to the object and back. The time measured is stored in the variable duration, and it represents the round-trip time of the sound wave in microseconds.To calculate the distance, we multiply duration by 0.034 speed of sound in cm/µs and divide by 2 since the sound travels to the object and back.
+This Arduino code uses an ultrasonic sensor to measure how far away an object is. It sends out a sound wave from the trigger pin, waits for it to bounce back, and measures how long it takes to return using the echo pin. The code then calculates the distance based on the time it took. If the object is closer than 10 centimeters, a buzzer turns on and makes a sound. If the object is farther away, the buzzer stays off. The distance is also printed on the Serial Monitor so you can see how far the object is in real-time.
 
 ```c++
 const int trigPin = 6;

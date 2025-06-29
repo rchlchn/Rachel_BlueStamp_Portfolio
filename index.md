@@ -62,35 +62,36 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 trigPin and eachPin are defined and start serial communication for the serial monitor and a long variable named duration to get the travel time from the sensor. In the loop, we first need to clear the trigPin by setting it to LOW for 2 microseconds. This ensures the sensor is ready. After that, we use the pulseIn() function to measure how long it takes for the sound to travel to the object and back. The time measured is stored in the variable duration, and it represents the round-trip time of the sound wave in microseconds.To calculate the distance, we multiply duration by 0.034 speed of sound in cm/µs and divide by 2 since the sound travels to the object and back.
 
 ```c++
-// defines pins numbers
-const int trigPin = 2;
-const int echoPin = 3;
-// defines variables
-long duration;
-int distance;
-void setup() {
-  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-  Serial.begin(9600); // Starts the serial communication
+const int trigPin = 6;
+const int echoPin = 5;
+const int buzzerPin = 9;
 
+float duration, distance;
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
- // Clears the trigPin
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
-  // Sets the trigPin on HIGH state for 10 micro seconds
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
-  // Reads the echoPin, returns the sound wave travel time in microseconds
+
   duration = pulseIn(echoPin, HIGH);
-  // Calculating the distance
-  distance = duration * 0.034 / 2;
-  // Prints the distance on the Serial Monitor
+  distance = (duration*.0343)/2;
   Serial.print("Distance: ");
   Serial.println(distance);
+  if (distance < 10){
+      tone(buzzerPin, 1000, 1000);
+  }
+  else {
+      noTone(buzzerPin);
+  }
+  delay(100);
 }
 ```
 

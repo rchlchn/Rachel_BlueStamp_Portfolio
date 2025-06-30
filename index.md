@@ -45,7 +45,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="384" height="682" src="https://www.youtube.com/embed/pCNd_KK011c" title="Rachel C. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
 
 I achieved my first milestone by learning and understanding circuit fundamentals which is incorporated in my project as I learned how to connect the ultrasonic sensor into the breadboard which is a crucial part for my project. I also learned how to use example codes and how to effectively change them to fit into the circumstances of your project. 
 - Technical progress I've made so far is building the ultrasonic sensor but once I tried to add the buzzer there were so technical difficulties including the nanos so I wasn't able to showcase it in my video

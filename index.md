@@ -16,7 +16,7 @@ This project is a compact, portable device designed to assist visually impaired 
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="966" height="543" src="https://www.youtube.com/embed/MsGriWm2Xxs" title="Rachel C. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - I've added an led that lights up with the buzzer when the buzzer is buzzer and it'll turn off if the buzzer isnt buzzing
 - I've adjusted the tone of the buzzer so that it'll get louder as any objects get closer

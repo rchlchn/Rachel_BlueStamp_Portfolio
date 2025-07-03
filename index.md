@@ -113,9 +113,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | ESP32 Nano | Holds Arduino code that powers and controls the functions of the project but also has added in wifi and bluetooth functions | $20.9 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
-- [Example 1]((https://www.circuitbasics.com/how-to-use-active-and-passive-buzzers-on-the-arduino/))
-- [Example 2]((https://projecthub.arduino.cc/SBR/working-with-an-led-and-a-push-button-d34b17))
-- [Example 3]([https://www.instructables.com/Arduino-Nano-Compatible-LEDs/])
-- [Example 4]((https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/))
+- [Example 1](https://www.circuitbasics.com/how-to-use-active-and-passive-buzzers-on-the-arduino/)
+- [Example 2](https://projecthub.arduino.cc/SBR/working-with-an-led-and-a-push-button-d34b17)
+- [Example 3](https://www.instructables.com/Arduino-Nano-Compatible-LEDs/)
+- [Example 4](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
 
 

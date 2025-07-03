@@ -10,8 +10,6 @@ This project is a compact, portable device designed to assist visually impaired 
 |:--:|:--:|:--:|:--:|
 | Rachel C | Leigh High School | Electrical Engineering | Incoming Sophmore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
 ![Headstone Image](logo.svg)
   
 # Final Milestone
@@ -24,7 +22,7 @@ This project is a compact, portable device designed to assist visually impaired 
 - I've adjusted the tone of the buzzer so that it'll get louder as any objects get closer
 - I've gained a lot of insight about the engineering field from this experience which helps me get a good perspective that I can keep in mind as I'm still unsure of what field I wanna pursue
 - I've learned some basic circuiting and how to use arduino, nano, and to build onto breadboards and also how to do some code to implement my project like coding for multiple hardware like the led, buzzer, and ultrasonsic sensor to work together
-- What you hope to learn in the future after everything you've learned at BSE
+- I hope to be able to apply my knowledge into a harder project or if I had more time I would have used the modification with bluetooth wifi since it's build into the esp32 nano and would connect to an app or website that will automatically have the data of the ultrasonic sensor and components from my project
 
 
 
@@ -57,7 +55,7 @@ hardware for the ultrasonic senor, a button, and a buzzer to track objects in mo
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
-This Arduino code uses an ultrasonic sensor to measure how far away an object is. It sends out a sound wave from the trigger pin, waits for it to bounce back, and measures how long it takes to return using the echo pin. The code then calculates the distance based on the time it took. If the object is closer than 10 centimeters, a buzzer turns on and makes a sound. If the object is farther away, the buzzer stays off. The distance is also printed on the Serial Monitor so you can see how far the object is in real-time.
+This Arduino code uses an ultrasonic sensor to measure how far away an object is. It sends out a sound wave from the trigger pin, waits for it to bounce back, and measures how long it takes to return using the echo pin. The code then calculates the distance based on the time it took. If the object is closer than 10 centimeters, a buzzer turns on and makes a sound. If the object is farther away, the buzzer stays off. The distance is also printed on the Serial Monitor so you can see how far the object is in real-time. The led turns on when the buzzer is buzzing and turns off when the buzzer is isnt buzzing and by adjusting and customizing the tone of the buzzer, the closer an object is, the louder the buzzer will get.
 
 ```c++
 const int trigPin = 6;
@@ -115,9 +113,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | ESP32 Nano | Holds Arduino code that powers and controls the functions of the project but also has added in wifi and bluetooth functions | $20.9 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [Example 1]((https://www.circuitbasics.com/how-to-use-active-and-passive-buzzers-on-the-arduino/))
+- [Example 2]((https://projecthub.arduino.cc/SBR/working-with-an-led-and-a-push-button-d34b17))
+- [Example 3]([https://arneshkumar.github.io/arneshbluestamp/](https://www.instructables.com/Arduino-Nano-Compatible-LEDs/))
+- [Example 4]((https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/))
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+

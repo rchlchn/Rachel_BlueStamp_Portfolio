@@ -32,8 +32,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe width="384" height="682" src="https://www.youtube.com/embed/UbVxrZwSebs" title="Rachel C. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 - I built the ultrasonic sensor and buzzer into the breadboard for the hardware and used jumper wires to plug them into the nano for a good connection and have the nano pluged into a power bank to make it more compact and accessable in more mobile use 
 - There were some difficulties with the hardware and debugging figuring out which physical component wasn't working since the ulrasonic senor wasn't detecting any distance for any objects in motion 
 - Some of the physical hardware components had stopped working or malfunctioned which caused some delay during the building process but we worked around it and figured out other solutions like using jumperwire and connecting it directly to the nano

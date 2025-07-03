@@ -10,7 +10,7 @@ This project is a compact, portable device designed to assist visually impaired 
 |:--:|:--:|:--:|:--:|
 | Rachel C | Leigh High School | Electrical Engineering | Incoming Sophmore
 
-![Headstone Image](logo.svg)
+![Headstone Image](pphoto.png)
   
 # Final Milestone
 

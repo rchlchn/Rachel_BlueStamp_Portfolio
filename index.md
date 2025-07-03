@@ -20,10 +20,10 @@ This project is a compact, portable device designed to assist visually impaired 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
+- I've added an led that lights up with the buzzer when the buzzer is buzzer and it'll turn off if the buzzer isnt buzzing
+- I've adjusted the tone of the buzzer so that it'll get louder as any objects get closer
+- I've gained a lot of insight about the engineering field from this experience which helps me get a good perspective that I can keep in mind as I'm still unsure of what field I wanna pursue
+- I've learned some basic circuiting and how to use arduino, nano, and to build onto breadboards and also how to do some code to implement my project like coding for multiple hardware like the led, buzzer, and ultrasonsic sensor to work together
 - What you hope to learn in the future after everything you've learned at BSE
 
 
@@ -62,18 +62,21 @@ This Arduino code uses an ultrasonic sensor to measure how far away an object is
 ```c++
 const int trigPin = 6;
 const int echoPin = 5;
-const int buzzerPin = 9;
+const int buzzerPin = 11;
 
-float duration, distance;
+float duration, distance, frequency;
 
 void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
+  
+  pinMode(3, OUTPUT); 
+
 }
 
 void loop() {
-  digitalWrite(trigPin, LOW);
+   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
@@ -84,10 +87,13 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
   if (distance < 10){
-      tone(buzzerPin, 1000, 1000);
+  frequency = 2000 - distance * 40;
+      tone(buzzerPin, frequency);
+      digitalWrite(3, HIGH);
   }
   else {
       noTone(buzzerPin);
+      digitalWrite(3, LOW);
   }
   delay(100);
 }
@@ -104,8 +110,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Stem Bundle Electronic Components Kits | Contains buzzer, led, wires, to build and customtize project | $14 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Ultrasonic Sensor | Detect motion of objects | $9.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | DMM | Used to test connection on wires and nano and sensors | $11 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Velcro | What the item is used for | $7.98 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| USB -- USBC Adapter | Making sure the wires are compatible to be able to connect it onto computer and start code | $9.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | USB power bank & cable | Used as a power source to make the device more portable to take around | $16.19 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| ESP32 Nano | Holds Arduino code that powers and controls the functions of the project but also has added in wifi and bluetooth functions | $20.9 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
